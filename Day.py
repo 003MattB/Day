@@ -46,6 +46,7 @@ class Day(object):
 
     def __add__(self,num):
         #intended to increment "self" by "num" days and return a new object
+        #asserts that num is positive so I don't have to deal with subtracting
         assert num >= 0
         new = Day(self.getDate())
         while num > 0:
